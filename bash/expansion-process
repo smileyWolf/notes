@@ -1,1 +1,7 @@
-A simple character sequence, for instance "*", can have a lot of meaning to the shell. The process that makes this happen is called expansion. With expansion, you type something and it is expanded into something else before the shell acts upon it.
+Expand meaning before shell acts.
+
+---
+
+# A simple character sequence, for instance "*", can have a lot of meaning to the shell.
+# The process that makes this happen is called expansion.
+# With expansion, you type something and it is expanded into something else before the shell acts upon it.
