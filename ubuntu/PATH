@@ -1,0 +1,12 @@
+System looks typed command in directories of PATH.
+
+---
+
+# Variable
+PATH
+	
+# Value examples
+/usr/sbin:/usr/bin:/sbin:/bin
+	
+# Description
+When you type a command to run, the system looks for it in the directories specified by PATH in the order specified
