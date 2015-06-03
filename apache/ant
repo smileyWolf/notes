@@ -1,0 +1,17 @@
+Software tool for software build processes(*1).
+Replacement for Make make unix make build tool.
+
+---
+
+Difference Ant vs Make
+- Ant: uses XML to describe the build processes and its dependencies; by default XML-file is "build.xml".
+- Make: ... Makefile-format.
+
+(*1)
+Build automation - the act of scripting or automating a variety of tasks that software developers do in their day-to-day activities including:
+- Compiling computer source code into binary code.
+- Packaging binary code.
+- Running automated tests.
+- Deploying to production systems.
+- Creating documentation and/or release notes.
+
