@@ -47,7 +47,7 @@ As you have probably experienced, dealing with an array in this way is complicat
 
 In Java you would likely decide to use some form of java.util.Collection, such as java.lang.List as implemented by java.lang.ArrayList rather than a literal array. An organizational standard should be authored that states how such associations should be modeled in UML. Certainly in an analysis model the above multiplicity association is appropriate. It clearly shows the intent of the relationship. But I suggest that in the design model such relationships will be clearer to developers who will be interpreting diagrams if you use the following standard:
 
-Figure: association-2
+Figure: associationrole
 
 Rather than using multiplicity in the design model, unless you absolutely intend for an array to be used, I believe the above to be a better use of UML. This association relationship states that one instance of A1 will declare an instance variable of class java.util.List and that the instance variable’s name will be b1List, which is expressed as a UML role name. Here’s a snippet of the corresponding code:
 
