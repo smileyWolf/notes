@@ -1,0 +1,5 @@
+output the last part of files
+
+---
+
+$ tail -n 5 FILE // print the last five lines of a file.

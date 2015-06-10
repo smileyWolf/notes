@@ -1,0 +1,11 @@
+output the first part of files
+
+---
+
+$ head -n3 *
+$ head -n3 *.txt
+
+$ head -n 10 FILE // print the first ten lines of a file.
+$ head -n -10 FILE // ... last ten lines.
+
+$ head -vn 3 FILE // add the filename to the head output.
