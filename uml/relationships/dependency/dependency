@@ -1,0 +1,30 @@
+The UML dependency relationship is the least formal of them all. It means that the class at the source end of the relationship has some sort of dependency on the class at the target (arrowhead) end of the relationship. For example, the following simple states that class A depends on class B in some way:
+
+Figure: dependency
+
+While dependency may have broad meaning, it is best not to overuse the dependency relationship. In an analysis model class diagram such as a domain model diagram you may be tempted to convey that all the classes just depend on each other. Interestingly however, the Rational Unified Process (RUP) specifies that the general class relationship that should be used in the analysis model is association (covered next), and not dependency. Therefore, even when you are modeling higher-level concepts it is best not to use the dependency relationship loosely. It is just too nebulous.
+
+Further, unless you use the dependency relationship in a constrained manner your model consumers (yourself or other developers) will simply have too broad an interpretation of its meaning. Generally those filling architect and designer roles in a project are there to give guidance to less experienced developers. Thus the dependency relationship should be used to convey a specific kind of guidance from architects and designers to developers.
+
+So what should a dependency relationship represent? In our UML example above the dependency means that class A uses class B, but that class A does not contain an instance of class B as part of its own state. It also means that if class B’s interface changes it will likely impact class A and require it to change. I suggest that you constrain your use of dependency relationships to non-state related concerns. You would use dependency to indicate that, for example, class A receives an instance of class B as a parameter to at least one of its methods. You would also use dependency to indicate that class A creates an instance of class B local to one of its methods (on the stack). You would not, however, use dependency to indicate that class A declares an instance variable of class B, as that would indicate a state-related concern. Again, use association to do that (covered next).
+
+In Java, the following is the proper interpretation of the constrained dependency relationship:
+
+import B; public class A { public void method1(B b) { // . . . } public void method2() { B tempB = new B(); // . . . } } 
+
+Actually either one of class B’s uses, as a parameter to a method, or as a local instance reference inside a method, would be appropriate reflection of a UML dependency relationship. Basically to Java the constrained dependency relationship means that you must import class B into class A so that class A may reference it in some way in a method. However, the following would be an incorrect implementation of the constrained dependency relationship in Java:
+
+ 
+
+import B;
+
+public class A {
+
+  private B b; // wrong!
+
+  public B getB() {
+    return b;
+  }
+}
+
+In the above example class B is used to define the state of an instance of class A by declaring an instance of class B with the instance scope. However, this is a misinterpretation of the dependency relationship. But that does lead us to the use of the next UML class relationship type, association.

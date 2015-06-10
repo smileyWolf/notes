@@ -1,0 +1,11 @@
+UML generalization is one of the better-understood relationships, and symbolizes what is known as inheritance in the world of object-oriented programming. It is sometimes also called specialization because the subclass is a specialization of the more generic super class:
+
+Figure: generalization
+
+More specifically UML generalization corresponds to class extension in the Java language. The above diagram fragment would be implemented in Java as follows:
+
+import B2;
+
+public class A2 extends B2 { // . . . }
+
+B2 is the super class and A2 is the subclass in the relationship. Just remember that the generalization symbol forms a line from the subclass to its super class with the clear triangular arrowhead pointing at the super class.
