@@ -1,35 +1,65 @@
+Summary
+=======
+=> Run apps, store data online with different level of flexibility and control
+   1. SaaS; run existing apps (user.)
+   2. PaaS; create own/new apps using vendor's environment and tools (developer.)
+   3. IaaS; run any app on vendor's hardware (sysadmins.)
+
+Definition
+==========
+Cloud computing is where software applications, processing power, data and potentially even artificial intelligence are accessed over the Internet.
+
 Building Blocks (allow to run applications and store data online, each offers a different level of user flexibility and control)
 ===============
-1. SAAS
-   - Allows users to run existing online applications; off-the-shelf applications accessed over the Internet (pixlr, jaycut, aviary.)
-   - Pros & Cons
-     1. + Free/paid via subscription.
-     2. + Accessible from any computer.
-     3. + Facilitates collaborative working.
-     4. - Generic applications not always suitable for business use.
+1. SaaS
+   => Allows users to run existing online applications; off-the-shelf applications accessed over the Internet (pixlr, jaycut, aviary.)
+   => Pros & Cons
+      1. + Free/paid via subscription.
+      2. + Accessible from any computer.
+      3. + Facilitates collaborative working.
+      4. - Generic applications not always suitable for business use.
 
-2. PAAS
-   - Allows users to create own cloud applications using supplier-specific tools and languages; 
-     provides environment and tools for creating new online applications (google app engine, windows azure, salesforce force.com).
-   - Pros & Cons
-     1. + Rapid development at low cost.
-     2. + Private or public deployment.
-     3. - Limits developers to provider languages and tools.
-     4. - Risk of vendor lock-in; cannot move code from one vendor to another.
+2. PaaS
+   => Allows users to create own cloud applications using supplier-specific tools and languages; 
+      provides environment and tools for creating new online applications (google app engine, windows azure, salesforce force.com).
+      Developers don't create VM directly, rather they provide an application to platform, which the platform then runs;
+      "Here platform, here is my app, run my app."
+   => Pros & Cons
+      1. + Rapid development at low cost.
+      2. + Private or public deployment.
+      3. - Limits/constrains/restrictive developers to provider languages and tools.
+      4. - Risk of vendor lock-in; cannot move code from one vendor to another.
 
-3. IAAS
-   - Allows users to run any applications on cloud hardware of own choice; allows existing applications to be run on a cloud supplier's hardware.
-   - Servers: Fundamental unit of cloud infrastructure
-     1. Physical: discrete individual computers
-     2. Virtual (virtual server instance): software control slices of physical server but shared among many users 
-        by a process called virtualization (allows many users to share one physical server.)
-   - Types
-     1. Private Cloud: specific number of physical servers dedicated to one customer.
-     2. Dedicated Hosting: customer runs physical servers (not shared with others) on demand matching their requirements.
-     3. Hybrid Hosting: mix of physical servers and virtual server instances reduce cost and increase flexibility.
-     4. Cloud Hosting: customer rents virtual server instances on demand.
+3. IaaS
+   => Allows users to run any applications on cloud hardware of own choice; allows existing applications to be run on a cloud supplier's hardware.
+      Users create virtual machines (VMs) on demand from a library of pre-existing VM images (VM for DBMS, VM for WebServer, ...)
+      Ex: computing applications run on platforms, platforms in turn run on computing infrastructure;
+          Microsoft Word application runs on the Microsoft Windows platform, in turn the Microsoft Windows platform runs on the infrastructure of an IBM-compatible PC.
+   => Server: Fundamental unit of cloud infrastructure
+      1. Physical (real, dedicated): discrete individual computers
+      2. Virtual (virtual server instance): software-controlled slices of physical server.
+         Created by a process called virtualization that allows many users to share the processing power of one physical server.
+         Seen cheaper, but less secure for those who do not want to share server hardware with other customers.
+   => Types
+      1. Private Cloud: specific number of physical servers dedicated to one customer.
+      2. Dedicated Hosting: customer runs physical servers (not shared with others) on demand matching their requirements.
+      3. Hybrid Hosting: mix of physical servers and virtual server instances reduce cost and increase flexibility.
+      4. Cloud Hosting: customer rents virtual server instances on demand (Amazon Web Services AWS including EC2 and S3; 
+         Rackspace with Rackspace Cloud Servers and Rackspace Cloud Files; GoGrid.)
 
 
-References
-==========
-1. http://explainingcomputers.com/cloud.html
+Characteristics
+===============
+=> Cloud computing is:
+   1. Dynamically scalable
+   2. Device-independent
+   3. Task centric
+      Users focus on what they want to achieve, rather than any software, hardware or network infrastructure.
+      No need to purchase or install anything before using cloud computing resource.
+   4. Charged on usage basis
+
+Reasons to cloud compute
+========================
+1. Remain competitive
+2. Stay green
+3. Next-generation applications

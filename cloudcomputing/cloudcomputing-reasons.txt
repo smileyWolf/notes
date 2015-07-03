@@ -1,0 +1,78 @@
+Title: ExplainingComputers.com: Cloud Computing
+URL: http://explainingcomputers.com/cloud.html
+
+=> The Three Reasons to Cloud Compute
+
+   1. The Competitive Cloud
+
+      - cloud computing will become essential for firms that wish to remain competitive
+
+        + it will cost them less to cloud compute than to run an in-house data centre
+
+        + because cloud computing is dynamically-scalable, task-centric and does not require substantial fixed-cost investments, 
+          firms that cloud compute are also likely to be more competitively agile than their competitors
+
+        + compares the growth of cloud computing to the development of the electricity network around a century ago
+          businesses had to make their own power using internal generators;
+          when a reliable electricity grid became available, companies were increasingly freed from having to generate their own energy in-house
+
+        + two competitive benefits
+          firstly, it saved companies money
+          secondly, it allowed companies to focus their resources on other aspects of their business
+
+        + ThinDesk is now offering small and medium-sized companies in Canada the opportunity to move to a thin client / cloud infrastructure
+
+   2. The Green Cloud
+
+      - it is more green
+
+        + most internal company data centres run their servers at around thirty per cent capacity
+
+        + large cloud data centre typically run at eighty per cent capacity or more
+
+        + less energy is wasted, with the carbon footprint of each unit of computing power being reduced
+
+      - more environmentally friendly than traditional computing
+
+        + removes the need for most users to have high-power PCs and laptops
+
+        + lower-power computers based around processors such as Intel's Atom are perfectly sufficient to run cloud applications
+
+        + can also cut end-user energy bills and carbon footprints
+
+      - cloud collaboration and virtual meeting tools may also allow some people to work from home a little more and to make fewer business trips
+
+        + help to take some cars off the road and some planes out of the sky
+
+   3. The Next Generation Cloud
+
+      - cloud computing will be driven not only by a desire and necessity to do existing things in more effective ways, but by a demand to do entirely new things
+
+      - one of the defining characteristics of cloud computing is that it enables value to created via collaboration and data sharing
+
+        + we will be prevented from obtaining the benefits of new developments such as "crowdsouring" unless many of us cloud compute
+
+      - Crowdsourcing
+
+        + the rise of cloud computing will make it easier for individuals to consciously work together on crowdsourcing projects
+
+      - Google Goggles visual search
+
+        + allows items viewed by a smartphone camera to be identified and used as the basis for a web search
+
+      - augmented reality
+
+        + real-time cloud data is overlaid on the camera feed of a smartphone or other mobile device
+
+        + users of the Layar augmented reality browser can now see other the photos and tweets of Twitter users in their area
+
+      - data shadow
+
+        + soon there will be so many cameras, microphones and other sensors online that a great many objects will start to cast a constant data shadow in the cloud
+
+        + satellite navigation systems will be able to advise on routes based not only on internal maps, 
+          but also the position and predicted intent of all other vehicles on the road
+
+      - artificial intelligence
+
+        + developments in artificial intelligence will also depend on crowdsourced cloud data

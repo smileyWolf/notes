@@ -1,0 +1,3 @@
+Definition
+==========
+A software environment used to develop and run applications.

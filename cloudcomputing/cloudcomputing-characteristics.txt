@@ -1,0 +1,16 @@
+Title: ExplainingComputers.com: Cloud Computing
+URL: http://explainingcomputers.com/cloud.html
+
+=> Cloud Computing Characteristics
+
+   + cloud computing is where dynamically scalable, device-independent and task-centric computing resources are provided online, 
+     with all charges being on a usage basis
+
+     - dynamically scalable because users only have to consume the amount of online computing resources they actually want
+
+     - device-independent because cloud computing resources can be accessed not just from any computer on the Internet, but also any type of computer
+
+     - task centric because the usage model is based entirely around what users want to achieve, 
+       rather than any particular software, hardware or network infrastructure
+
+     - charged on a usage basis, it has no fixed costs

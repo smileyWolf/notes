@@ -1,0 +1,51 @@
+Title: ExplainingComputers.com: Cloud Computing
+URL: http://explainingcomputers.com/cloud.html
+
+=> private cloud (or more fully a vendor managed private cloud
+
+   + customer rents a number of co-located servers in part of a data centre
+
+     - cloud hardware is as separate as possible from that of other users
+
+     - most secure form of IaaS
+
+     - cannot be dynamically scaled
+
+     - is the most expensive form of IaaS as a block of servers is permanently dedicated to one customer
+
+     - "private cloud" has to be a cloud computing arrangement where the hardware concerned is owned and housed in a vendor's shared data centre
+
+=> dedicated hosting
+
+   + customer rents dedicated physical servers on demand from anywhere within a data centre
+
+     - while this means that the hardware they use is mixed-in with that of other customers, 
+       in this IaaS category once again customers do not share the particular servers they use with anybody else
+
+     - less costly than a private cloud
+
+     - can therefore be dynamically scaled
+
+     - customer is able to increase or decrease the number of servers
+
+     - paying for on a daily or even hourly basis
+
+=> hybrid hosting
+
+   + customer rents on demand a mix of dedicated physical servers and as well as some less expensive virtual server instances
+
+     - a company may run all of its applications on dedicated physical servers, but store its data on virtual server instances
+
+     - the whole offering is dynamically scalable
+
+=> cloud hosting
+
+   + customer rents as many or as few virtual server instances as they require on demand
+
+     - customers share all of the servers they use with other customers
+
+     - some companies subsequently see this as too risky
+
+     - lowest-cost and by far the most technically and environmentally efficient form of IaaS
+
+     - allows an IaaS provider to run all of their physical servers in use to capacity and to close down those not required

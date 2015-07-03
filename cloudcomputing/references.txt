@@ -1,0 +1,11 @@
+cloudcomputing (information)
+http://explainingcomputers.com/cloud.html
+
+cloud-computing-responsibilities (image)
+http://community.kii.com/t/iaas-paas-saas-whats-that/16
+
+pas_ias_sas (image)
+http://www.globaldots.com/cloud-computing-types-of-cloud/
+
+iaas-categories (image)
+http://explainingcomputers.com/cloud.html
