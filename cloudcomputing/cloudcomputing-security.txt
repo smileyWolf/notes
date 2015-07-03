@@ -1,0 +1,34 @@
+Title: ExplainingComputers.com: Cloud Computing
+URL: http://explainingcomputers.com/cloud.html
+
+=> Security Concerns
+
+   + cloud computing frees both individuals and organizations from the cost and hassle of installing, maintaining and constantly upgrading software applications 
+     on their desktops and in their data centres
+
+   + also allows companies to focus on their core competencies, rather than investing in centralized computing facilities that have to be maintained 
+     and upgraded and that may not be utilized at an optimum capacity
+
+   + critics of cloud computing point to the fact that
+
+     - users become totally reliant on a high quality Internet connection
+
+     - Cloud computing also creates a reliance on external suppliers which may also raise potential business continuity, data protection and security risks
+
+       Ex: anybody or any company that makes web searches or sends e-mail -- let alone who makes online purchases or does 
+           their banking online -- is already trusting both the quality of available online security, as well as the security of those they purchase from, 
+           not to mention the integrity of their Internet Service Provider
+
+       Ex: a reliable Internet connection has now become as requisite a utility service for business and personal activities 
+           as a constantly available phone network and electricity supply
+
+   + as is usually the case when problems occur -- security was compromised at the user and not the vendor end of the cloud computing chain
+
+     - anybody using cloud computing services needs to take appropriate measures for ensuring safe web access. These include setting a strong password, 
+       ensuring antivirus, antispyware and firewall software are installed, and ensuring that their operating system and web browser(s) are 
+       always updated with the latest security patches. All users also need to be educated not to open suspicious e-mails that may contain and install malware. 
+       More information on appropriate online security measures can be found on the security page or from GetSafeOnline.org
+
+     - Google's recently released Chrome OS operating system relies entirely on Google Docs and other cloud based applications and storage. 
+       In turn, as Google advertise, this will make Chrome-based computers far more secure as it is simply not be possible for applications to be locally installed. 
+       For years we have heralded computers as programmable devices on which we can install local software
