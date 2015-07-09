@@ -1,0 +1,6 @@
+Title: Heroku Postgres | Heroku Dev Center
+URL: https://devcenter.heroku.com/articles/heroku-postgresql#local-setup
+
+=> Install postgres on windows by using the Windows installer.
+
+   + URL: [http://www.enterprisedb.com/products-services-training/pgdownload#windows]
