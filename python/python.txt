@@ -1,0 +1,73 @@
+Summary
+=======
+
+Install Requirements
+====================
+=> Windows PowerShell as administrator
+   + Set-ExecutionPolicy RemoteSigned (other options: Restricted, AllSigned, Unrestricted)
+
+
+Install
+=======
+
+Create Application
+==================
+1. Go to ~
+2. mkdir MY_DIR
+3. cd MY_DIR
+4. virtualenv venv
+5. Windows: "./venv/Scripts/activate.bat" (Linux/any Posix: "source venv/bin/activate" or "./venv/bin/activate")
+6. pip install Flask gunicorn
+
+
+Title: Scripting with Windows PowerShell
+URL: https://technet.microsoft.com/en-us/library/bb978526.aspx
+PowerShell
+==========
+=> Scripting with Windows PowerShell
+
+   + About
+
+     1. is a task-based command-line shell and scripting language designed especially for system administration
+
+     2. built on the .NET Framework
+
+     3. helps IT professionals and power users control and automate the administration of the Windows OS and applications that run on Windows
+
+     4. commands, called cmdlets
+
+        - let you manage the computers from the command line
+
+     5. providers
+
+        - let you access data stores, such as the registry and certificate store
+
+     6. rich expression parser
+
+     7. a fully developed scripting language
+
+   + Features
+
+     1. cmdlets
+
+        - performing common system administration tasks managing the registry, services, processes, and event logs, 
+          and using Windows Management Instrumentation (WMI)
+
+     2. a task-based scripting language and support for existing scripts and command-line tools
+
+     3. Consistent design
+
+        - because cmdlets and system data stores use common syntax and naming conventions, 
+          data can be shared easily and the output from one cmdlet can be used as the input to another cmdlet without reformatting or manipulation
+
+     4. simplified, command-based navigation of the operating system
+
+        - lets users navigate the registry and other data stores by using the same techniques that they use to navigate the file system
+
+     5. object manipulation capabilities
+
+        - objects can be directly manipulated or sent to other tools or databases
+
+     6. extensible interface
+
+        independent software vendors and enterprise developers can build custom tools and utilities to administer their software
