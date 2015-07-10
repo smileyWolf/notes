@@ -15,9 +15,9 @@ URL: http://docs.python-guide.org/en/latest/starting/install/win/
 
       + packaging and installation facilities
 
-        - ez_setup.py (command available to you: easy_install) [https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py]
+        - setuptools for Windows: ez_setup.py (command available to you: easy_install) [https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py]
 
-        - get-pip.py (its replacement: pip) [https://raw.github.com/pypa/pip/master/contrib/get-pip.py]
+        - pip: get-pip.py (its replacement: pip) [https://raw.github.com/pypa/pip/master/contrib/get-pip.py]
 
    3. virtual environments
 
