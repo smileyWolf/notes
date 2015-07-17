@@ -1,0 +1,49 @@
+Summary
+=======
+=> Web Server Gateway Interface (WSGI)
+   + interface b/n [web-server] and [web-applications/frameworks] for Python to promote web-app portability across a variety of web-servers
+     (describes how web-server communicates with web-apps, and how web-apps can be chained together to process one request)
+     - issue due to the web framework's choice since that would limit the choice of usable web-server and vice versa
+       Ex: some apps were designed for only one API of a specific web-server
+   + TWO sides
+     - server/gateway (web-server)
+     - application/framework (python script)
+   + WSGI middleware
+     - sits b/n server or app, so implements both sides of API
+
+Title: web-server Gateway Interface - Wikipedia, the free encyclopedia
+URL: https://en.wikipedia.org/wiki/Web_Server_Gateway_Interface
+
+=> web-server Gateway Interface (WSGI)
+
+   + is a specification for simple and universal interface between web-servers and web-applications or frameworks for the Python programming language
+
+     - Python web-application frameworks have been a problem for new Python users because the choice of web framework would limit the choice of usable web-servers, 
+       and vice versa.[3] Python applications were often designed for only one of CGI, FastCGI, mod_python or some other custom API of a specific web-server. 
+       WSGI[2] was created as a low-level interface between web-servers and web-applications or frameworks to promote common ground for 
+       portable web-application development.
+
+   + WSGI has two sides
+
+     - the "server" or "gateway" side (often the web-server like Apache, Nginx)
+
+     - the "application" or "framework" side (the python script itself)
+
+       >> To process a WSGI request, the server side executes the application and provides environment information and a callback function to the application side. 
+          The application processes the request, and returns the response to the server side using the callback function it was provided.
+
+   + so-called WSGI middleware sits in the middle of the server and application thus implements both sides of the API
+
+     - The server after receiving a request from a client forwards it to the middleware using WSGI, when after processing it sends a request to 
+       another WSGI script/application whose response is forwarded to the client via the middleware and ultimately via the server. 
+       There may be multiple middlewares, thus forming a stack of WSGI compliant applications.
+
+   + "middleware" component can perform such functions as:
+
+     - Routing a request to different application objects based on the target URL, after changing the environment variables accordingly.
+
+     - Allowing multiple applications or frameworks to run side-by-side in the same process
+
+     - Load balancing and remote processing, by forwarding requests and responses over a network
+
+     - Perform content postprocessing, such as applying XSLT stylesheets
