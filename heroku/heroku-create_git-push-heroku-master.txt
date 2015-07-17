@@ -1,0 +1,121 @@
+PS C:\Users\Thinkpad\python-getting-started> heroku create
+Creating warm-hollows-1060... done, stack is cedar-14
+https://warm-hollows-1060.herokuapp.com/ | https://git.heroku.com/warm-hollows-1060.git
+Git remote heroku added
+PS C:\Users\Thinkpad\python-getting-started> git push heroku master
+Counting objects: 169, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (80/80), done.
+Writing objects: 100% (169/169), 26.02 KiB | 0 bytes/s, done.
+Total 169 (delta 75), reused 169 (delta 75)
+remote: Compressing source files... done.
+remote: Building source:
+remote:
+remote: -----> Python app detected
+remote: -----> Installing runtime (python-2.7.9)
+remote: -----> Installing dependencies with pip
+remote:        Collecting dj-database-url==0.3.0 (from -r requirements.txt (line 1))
+remote:          Downloading dj_database_url-0.3.0-py2.py3-none-any.whl
+remote:        Collecting Django==1.8.1 (from -r requirements.txt (line 2))
+remote:          Downloading Django-1.8.1-py2.py3-none-any.whl (6.2MB)
+remote:        Collecting django-postgrespool==0.3.0 (from -r requirements.txt (line 3))
+remote:          Downloading django-postgrespool-0.3.0.tar.gz
+remote:        Collecting gunicorn==19.3.0 (from -r requirements.txt (line 4))
+remote:          Downloading gunicorn-19.3.0-py2.py3-none-any.whl (110kB)
+remote:        Collecting psycopg2==2.6 (from -r requirements.txt (line 5))
+remote:          Downloading psycopg2-2.6.tar.gz (367kB)
+remote:        Collecting SQLAlchemy==1.0.4 (from -r requirements.txt (line 6))
+remote:          Downloading SQLAlchemy-1.0.4.tar.gz (4.6MB)
+remote:        Collecting whitenoise==1.0.6 (from -r requirements.txt (line 7))
+remote:          Downloading whitenoise-1.0.6-py2.py3-none-any.whl
+remote:        Installing collected packages: dj-database-url, Django, psycopg2, SQLAlchemy, django-postgrespool, gunico
+rn, whitenoise
+remote:          Running setup.py install for psycopg2
+remote:          Running setup.py install for SQLAlchemy
+remote:          Running setup.py install for django-postgrespool
+remote:        Successfully installed Django-1.8.1 SQLAlchemy-1.0.4 dj-database-url-0.3.0 django-postgrespool-0.3.0 guni
+corn-19.3.0 psycopg2-2.6 whitenoise-1.0.6
+remote: You are using pip version 7.0.3, however version 7.1.0 is available.
+remote: You should consider upgrading via the 'pip install --upgrade pip' command.
+remote:
+remote: -----> Preparing static assets
+remote:        Running collectstatic...
+remote:        Post-processed 'admin/js/admin/DateTimeShortcuts.js' as 'admin/js/admin/DateTimeShortcuts.140919a6a17e.js
+'
+remote:        Post-processed 'admin/js/admin/RelatedObjectLookups.js' as 'admin/js/admin/RelatedObjectLookups.58b2336c1
+e19.js'
+remote:        Post-processed 'admin/img/gis/move_vertex_on.png' as 'admin/img/gis/move_vertex_on.99be2571b3f6.png'
+remote:        Post-processed 'admin/img/gis/move_vertex_off.png' as 'admin/img/gis/move_vertex_off.93ee41d8cad9.png'
+remote:        Post-processed 'admin/js/collapse.min.js' as 'admin/js/collapse.min.bf4e82bb444b.js'
+remote:        Post-processed 'admin/js/calendar.js' as 'admin/js/calendar.df720acbe7bb.js'
+remote:        Post-processed 'admin/js/core.js' as 'admin/js/core.78280057239a.js'
+remote:        Post-processed 'admin/js/jquery.min.js' as 'admin/js/jquery.min.5790ead7ad3b.js'
+remote:        Post-processed 'admin/js/inlines.js' as 'admin/js/inlines.ec5c4bfbf84d.js'
+remote:        Post-processed 'admin/js/prepopulate.min.js' as 'admin/js/prepopulate.min.4479f53b704f.js'
+remote:        Post-processed 'admin/js/prepopulate.js' as 'admin/js/prepopulate.cd237b18d36c.js'
+remote:        Post-processed 'admin/js/urlify.js' as 'admin/js/urlify.687bc28c85b7.js'
+remote:        Post-processed 'admin/js/timeparse.js' as 'admin/js/timeparse.a298a7ede5c3.js'
+remote:        Post-processed 'admin/js/SelectBox.js' as 'admin/js/SelectBox.df843afcc450.js'
+remote:        Post-processed 'admin/js/related-widget-wrapper.js' as 'admin/js/related-widget-wrapper.3641d148e433.js'
+remote:        Post-processed 'admin/js/SelectFilter2.js' as 'admin/js/SelectFilter2.54a4515a9134.js'
+remote:        Post-processed 'admin/js/jquery.init.js' as 'admin/js/jquery.init.575b5609d57c.js'
+remote:        Post-processed 'admin/js/LICENSE-JQUERY.txt' as 'admin/js/LICENSE-JQUERY.3c2025538601.txt'
+remote:        Post-processed 'admin/js/actions.min.js' as 'admin/js/actions.min.2893760b9e40.js'
+remote:        Post-processed 'admin/js/collapse.js' as 'admin/js/collapse.c781bafaf192.js'
+remote:        Post-processed 'admin/js/actions.js' as 'admin/js/actions.42b74ac13f07.js'
+remote:        Post-processed 'admin/js/inlines.min.js' as 'admin/js/inlines.min.e3cd9638369f.js'
+remote:        Post-processed 'admin/js/jquery.js' as 'admin/js/jquery.c0b3962f9f23.js'
+remote:        Post-processed 'admin/img/nav-bg-grabber.gif' as 'admin/img/nav-bg-grabber.45d7c744bbe8.gif'
+remote:        Post-processed 'admin/img/tooltag-arrowright.png' as 'admin/img/tooltag-arrowright.5aa2c86314d7.png'
+remote:        Post-processed 'admin/img/nav-bg-selected.gif' as 'admin/img/nav-bg-selected.4ebddc881b37.gif'
+remote:        Post-processed 'admin/img/selector-icons.gif' as 'admin/img/selector-icons.4549da0d5c7f.gif'
+remote:        Post-processed 'admin/img/icon_deletelink.gif' as 'admin/img/icon_deletelink.b797f0120322.gif'
+remote:        Post-processed 'admin/img/nav-bg-reverse.gif' as 'admin/img/nav-bg-reverse.bd4701ff1aeb.gif'
+remote:        Post-processed 'admin/img/icon_success.gif' as 'admin/img/icon_success.08e6b9d922e1.gif'
+remote:        Post-processed 'admin/img/selector-search.gif' as 'admin/img/selector-search.a5de786630be.gif'
+remote:        Post-processed 'admin/img/sorting-icons.gif' as 'admin/img/sorting-icons.2a27f8855e6b.gif'
+remote:        Post-processed 'admin/img/icon_searchbox.png' as 'admin/img/icon_searchbox.46952c2c6973.png'
+remote:        Post-processed 'admin/img/inline-delete-8bit.png' as 'admin/img/inline-delete-8bit.1c135ffae5f0.png'
+remote:        Post-processed 'admin/img/icon_alert.gif' as 'admin/img/icon_alert.572a03fff47e.gif'
+remote:        Post-processed 'admin/img/icon_clock.gif' as 'admin/img/icon_clock.d65ba15015dd.gif'
+remote:        Post-processed 'admin/img/inline-restore.png' as 'admin/img/inline-restore.a14579a2580f.png'
+remote:        Post-processed 'admin/img/default-bg-reverse.gif' as 'admin/img/default-bg-reverse.2c9949b0bac0.gif'
+remote:        Post-processed 'admin/img/changelist-bg.gif' as 'admin/img/changelist-bg.eaa563daae2a.gif'
+remote:        Post-processed 'admin/img/nav-bg.gif' as 'admin/img/nav-bg.5dadb8cd9865.gif'
+remote:        Post-processed 'admin/img/icon-unknown.gif' as 'admin/img/icon-unknown.662022bb6ab0.gif'
+remote:        Post-processed 'admin/img/inline-splitter-bg.gif' as 'admin/img/inline-splitter-bg.3d67b08b4771.gif'
+remote:        Post-processed 'admin/img/inline-delete.png' as 'admin/img/inline-delete.4df86317f5c4.png'
+remote:        Post-processed 'admin/img/icon-no.gif' as 'admin/img/icon-no.2888642640a3.gif'
+remote:        Post-processed 'admin/img/deleted-overlay.gif' as 'admin/img/deleted-overlay.1cd28ce73d7d.gif'
+remote:        Post-processed 'admin/img/icon_changelink.gif' as 'admin/img/icon_changelink.76183412227f.gif'
+remote:        Post-processed 'admin/img/icon-yes.gif' as 'admin/img/icon-yes.0596085e212f.gif'
+remote:        Post-processed 'admin/img/icon_addlink.gif' as 'admin/img/icon_addlink.27872b1581c4.gif'
+remote:        Post-processed 'admin/img/inline-restore-8bit.png' as 'admin/img/inline-restore-8bit.19cd843fa6f9.png'
+remote:        Post-processed 'admin/img/changelist-bg_rtl.gif' as 'admin/img/changelist-bg_rtl.db38ab536edc.gif'
+remote:        Post-processed 'admin/img/icon_calendar.gif' as 'admin/img/icon_calendar.b4704fc81e9d.gif'
+remote:        Post-processed 'admin/img/default-bg.gif' as 'admin/img/default-bg.af816e70c828.gif'
+remote:        Post-processed 'admin/img/tooltag-add.png' as 'admin/img/tooltag-add.2152fd3b4a4d.png'
+remote:        Post-processed 'admin/img/icon_error.gif' as 'admin/img/icon_error.d0272cd88394.gif'
+remote:        Post-processed 'admin/css/forms.css' as 'admin/css/forms.812a4441d477.css'
+remote:        Post-processed 'admin/css/login.css' as 'admin/css/login.9ee3563a2bfe.css'
+remote:        Post-processed 'admin/css/changelists.css' as 'admin/css/changelists.facd9faec460.css'
+remote:        Post-processed 'admin/css/dashboard.css' as 'admin/css/dashboard.4898e2e9983d.css'
+remote:        Post-processed 'admin/css/ie.css' as 'admin/css/ie.2ca52592ccf6.css'
+remote:        Post-processed 'admin/css/rtl.css' as 'admin/css/rtl.b619957e18c9.css'
+remote:        Post-processed 'admin/css/base.css' as 'admin/css/base.f0d165989b77.css'
+remote:        Post-processed 'admin/css/widgets.css' as 'admin/css/widgets.b9ec9b826b20.css'
+remote:        Post-processed 'humans.txt' as 'humans.d41d8cd98f00.txt'
+remote:        Post-processed 'lang-logo.png' as 'lang-logo.019c8743b7cf.png'
+remote:        64 static files copied to '/app/staticfiles', 64 post-processed.
+remote:
+remote: -----> Discovering process types
+remote:        Procfile declares types -> web
+remote:
+remote: -----> Compressing... done, 42.9MB
+remote: -----> Launching... done, v4
+remote:        https://warm-hollows-1060.herokuapp.com/ deployed to Heroku
+remote:
+remote: Verifying deploy.... done.
+To https://git.heroku.com/warm-hollows-1060.git
+ * [new branch]      master -> master
+PS C:\Users\Thinkpad\python-getting-started>

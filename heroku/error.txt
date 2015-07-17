@@ -1,0 +1,267 @@
+PS C:\Users\Thinkpad\python-getting-started> heroku logs --tail
+2015-07-10T02:27:46.052211+00:00 heroku[api]: Enable Logplex by dan.magariu@gmail.com
+2015-07-10T02:27:46.052305+00:00 heroku[api]: Release v2 created by dan.magariu@gmail.com
+2015-07-10T02:36:46.489264+00:00 heroku[api]: Attach DATABASE resource by dan.magariu@gmail.com
+2015-07-10T02:36:46.489264+00:00 heroku[api]: Release v3 created by dan.magariu@gmail.com
+2015-07-10T02:36:46.778609+00:00 heroku[api]: Deploy 1c56814 by dan.magariu@gmail.com
+2015-07-10T02:36:46.778609+00:00 heroku[api]: Release v4 created by dan.magariu@gmail.com
+2015-07-10T02:36:46.725101+00:00 heroku[api]: Scale to web=1 by dan.magariu@gmail.com
+2015-07-10T02:36:46.844268+00:00 heroku[slug-compiler]: Slug compilation started
+2015-07-10T02:36:46.844289+00:00 heroku[slug-compiler]: Slug compilation finished
+2015-07-10T02:36:51.662393+00:00 heroku[web.1]: Starting process with command `gunicorn gettingstarted.wsgi --log-file -
+`
+2015-07-10T02:36:53.742854+00:00 app[web.1]: [2015-07-10 02:36:53 +0000] [3] [INFO] Starting gunicorn 19.3.0
+2015-07-10T02:36:53.745585+00:00 app[web.1]: [2015-07-10 02:36:53 +0000] [3] [INFO] Listening at: http://0.0.0.0:33988 (
+3)
+2015-07-10T02:36:53.772380+00:00 app[web.1]: [2015-07-10 02:36:53 +0000] [9] [INFO] Booting worker with pid: 9
+2015-07-10T02:36:53.745746+00:00 app[web.1]: [2015-07-10 02:36:53 +0000] [3] [INFO] Using worker: sync
+2015-07-10T02:36:53.869165+00:00 app[web.1]: [2015-07-10 02:36:53 +0000] [10] [INFO] Booting worker with pid: 10
+2015-07-10T02:36:54.400740+00:00 heroku[web.1]: State changed from starting to up
+2015-07-10T02:45:18.869389+00:00 heroku[router]: at=info method=GET path="/" host=warm-hollows-1060.herokuapp.com reques
+t_id=e8ffcdd0-bc1d-4c64-b2bc-4d5334b2ea49 fwd="192.222.189.171" dyno=web.1 connect=1ms service=29ms status=200 bytes=673
+5
+2015-07-10T02:45:19.068611+00:00 heroku[router]: at=info method=GET path="/static/lang-logo.png" host=warm-hollows-1060.
+herokuapp.com request_id=7dfb19d1-83eb-4906-996f-594a9a1c3fd4 fwd="192.222.189.171" dyno=web.1 connect=4ms service=4ms s
+tatus=200 bytes=2477
+2015-07-10T02:45:20.111748+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=warm-hollows-1060.herokuapp
+.com request_id=f06a5286-36ce-48ff-ae85-5a5cd6d8f659 fwd="192.222.189.171" dyno=web.1 connect=0ms service=23ms status=40
+4 bytes=2393
+2015-07-10T02:50:13.607920+00:00 heroku[api]: Scale to web=1 by dan.magariu@gmail.com
+2015-07-10T02:52:13.370583+00:00 heroku[router]: at=info method=GET path="/" host=warm-hollows-1060.herokuapp.com reques
+t_id=af744883-6f69-49ae-a8f2-4d5609dac081 fwd="192.222.189.171" dyno=web.1 connect=5ms service=12ms status=200 bytes=673
+5
+2015-07-10T02:52:13.829128+00:00 heroku[router]: at=info method=GET path="/static/lang-logo.png" host=warm-hollows-1060.
+herokuapp.com request_id=b36613b5-fb71-4f9d-a284-5444bffb7e1c fwd="192.222.189.171" dyno=web.1 connect=2ms service=2ms s
+tatus=304 bytes=110
+2015-07-10T02:55:19.229723+00:00 heroku[router]: at=info method=GET path="/" host=warm-hollows-1060.herokuapp.com reques
+t_id=c9f661af-dcbe-4b40-9651-eded97546188 fwd="192.222.189.171" dyno=web.1 connect=2ms service=13ms status=200 bytes=673
+5
+2015-07-10T02:55:19.346505+00:00 heroku[router]: at=info method=GET path="/static/lang-logo.png" host=warm-hollows-1060.
+herokuapp.com request_id=b22628aa-708c-4700-a851-fffa1ba4f37b fwd="192.222.189.171" dyno=web.1 connect=1ms service=2ms s
+tatus=200 bytes=2477
+2015-07-10T02:55:19.974834+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=warm-hollows-1060.herokuapp
+.com request_id=2d597738-ea69-4eb6-acd8-e4e0fca7986a fwd="192.222.189.171" dyno=web.1 connect=13ms service=9ms status=40
+4 bytes=2393
+ !    Command cancelled.
+Terminate batch job (Y/N)? y
+PS C:\Users\Thinkpad\python-getting-started>
+PS C:\Users\Thinkpad\python-getting-started>
+PS C:\Users\Thinkpad\python-getting-started> heroku ps
+=== web (Free): `gunicorn gettingstarted.wsgi --log-file -`
+web.1: up 2015/07/09 22:36:53 (~ 23m ago)
+
+PS C:\Users\Thinkpad\python-getting-started> virtualenv venv
+New python executable in venv\Scripts\python.exe
+Installing setuptools, pip, wheel...done.
+PS C:\Users\Thinkpad\python-getting-started> .\venv
+The term '.\venv' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spel
+ling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:7
++ .\venv <<<<
+    + CategoryInfo          : ObjectNotFound: (.\venv:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Thinkpad\python-getting-started> .\venv\Scripts\activate.bat
+PS C:\Users\Thinkpad\python-getting-started>
+PS C:\Users\Thinkpad\python-getting-started>
+PS C:\Users\Thinkpad\python-getting-started>
+PS C:\Users\Thinkpad\python-getting-started>
+PS C:\Users\Thinkpad\python-getting-started> pip install -r requirements.txt --allow-all-external
+You are using pip version 7.0.1, however version 7.1.0 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+Collecting dj-database-url==0.3.0 (from -r requirements.txt (line 1))
+  Downloading dj_database_url-0.3.0-py2.py3-none-any.whl
+Collecting Django==1.8.1 (from -r requirements.txt (line 2))
+  Downloading Django-1.8.1-py2.py3-none-any.whl (6.2MB)
+    100% |################################| 6.2MB 61kB/s
+Collecting django-postgrespool==0.3.0 (from -r requirements.txt (line 3))
+  Downloading django-postgrespool-0.3.0.tar.gz
+Requirement already satisfied (use --upgrade to upgrade): gunicorn==19.3.0 in c:\python27\lib\site-packages (from -r req
+uirements.txt (line 4))
+Collecting psycopg2==2.6 (from -r requirements.txt (line 5))
+  Downloading psycopg2-2.6.tar.gz (367kB)
+    100% |################################| 368kB 871kB/s
+Collecting SQLAlchemy==1.0.4 (from -r requirements.txt (line 6))
+  Downloading SQLAlchemy-1.0.4.tar.gz (4.6MB)
+    100% |################################| 4.6MB 58kB/s
+Collecting whitenoise==1.0.6 (from -r requirements.txt (line 7))
+  Downloading whitenoise-1.0.6-py2.py3-none-any.whl
+Installing collected packages: dj-database-url, Django, psycopg2, SQLAlchemy, django-postgrespool, whitenoise
+  Running setup.py install for psycopg2
+    Complete output from command C:\Python27\python.exe -c "import setuptools, tokenize;__file__='c:\\users\\thinkpad\\a
+ppdata\\local\\temp\\pip-build-fwpyii\\psycopg2\\setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read()
+.replace('\r\n', '\n'), __file__, 'exec'))" install --record c:\users\thinkpad\appdata\local\temp\pip-ybqkzs-record\inst
+all-record.txt --single-version-externally-managed --compile:
+    running install
+    running build
+    running build_py
+    creating build
+    creating build\lib.win-amd64-2.7
+    creating build\lib.win-amd64-2.7\psycopg2
+    copying lib\errorcodes.py -> build\lib.win-amd64-2.7\psycopg2
+    copying lib\extensions.py -> build\lib.win-amd64-2.7\psycopg2
+    copying lib\extras.py -> build\lib.win-amd64-2.7\psycopg2
+    copying lib\pool.py -> build\lib.win-amd64-2.7\psycopg2
+    copying lib\psycopg1.py -> build\lib.win-amd64-2.7\psycopg2
+    copying lib\tz.py -> build\lib.win-amd64-2.7\psycopg2
+    copying lib\_json.py -> build\lib.win-amd64-2.7\psycopg2
+    copying lib\_range.py -> build\lib.win-amd64-2.7\psycopg2
+    copying lib\__init__.py -> build\lib.win-amd64-2.7\psycopg2
+    creating build\lib.win-amd64-2.7\psycopg2\tests
+    copying tests\dbapi20.py -> build\lib.win-amd64-2.7\psycopg2\tests
+    copying tests\dbapi20_tpc.py -> build\lib.win-amd64-2.7\psycopg2\tests
+    copying tests\testconfig.py -> build\lib.win-amd64-2.7\psycopg2\tests
+    copying tests\testutils.py -> build\lib.win-amd64-2.7\psycopg2\tests
+    copying tests\test_async.py -> build\lib.win-amd64-2.7\psycopg2\tests
+    copying tests\test_bugX000.py -> build\lib.win-amd64-2.7\psycopg2\tests
+    copying tests\test_bug_gc.py -> build\lib.win-amd64-2.7\psycopg2\tests
+    copying tests\test_cancel.py -> build\lib.win-amd64-2.7\psycopg2\tests
+    copying tests\test_connection.py -> build\lib.win-amd64-2.7\psycopg2\tests
+    copying tests\test_copy.py -> build\lib.win-amd64-2.7\psycopg2\tests
+    copying tests\test_cursor.py -> build\lib.win-amd64-2.7\psycopg2\tests
+    copying tests\test_dates.py -> build\lib.win-amd64-2.7\psycopg2\tests
+    copying tests\test_extras_dictcursor.py -> build\lib.win-amd64-2.7\psycopg2\tests
+    copying tests\test_green.py -> build\lib.win-amd64-2.7\psycopg2\tests
+    copying tests\test_lobject.py -> build\lib.win-amd64-2.7\psycopg2\tests
+    copying tests\test_module.py -> build\lib.win-amd64-2.7\psycopg2\tests
+    copying tests\test_notify.py -> build\lib.win-amd64-2.7\psycopg2\tests
+    copying tests\test_psycopg2_dbapi20.py -> build\lib.win-amd64-2.7\psycopg2\tests
+    copying tests\test_quote.py -> build\lib.win-amd64-2.7\psycopg2\tests
+    copying tests\test_transaction.py -> build\lib.win-amd64-2.7\psycopg2\tests
+    copying tests\test_types_basic.py -> build\lib.win-amd64-2.7\psycopg2\tests
+    copying tests\test_types_extras.py -> build\lib.win-amd64-2.7\psycopg2\tests
+    copying tests\test_with.py -> build\lib.win-amd64-2.7\psycopg2\tests
+    copying tests\__init__.py -> build\lib.win-amd64-2.7\psycopg2\tests
+    running build_ext
+    building 'psycopg2._psycopg' extension
+    error: Microsoft Visual C++ 9.0 is required (Unable to find vcvarsall.bat). Get it from http://aka.ms/vcpython27
+
+    ----------------------------------------
+Command "C:\Python27\python.exe -c "import setuptools, tokenize;__file__='c:\\users\\thinkpad\\appdata\\local\\temp\\pip
+-build-fwpyii\\psycopg2\\setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read().replace('\r\n', '\n'),
+__file__, 'exec'))" install --record c:\users\thinkpad\appdata\local\temp\pip-ybqkzs-record\install-record.txt --single-
+version-externally-managed --compile" failed with error code 1 in c:\users\thinkpad\appdata\local\temp\pip-build-fwpyii\
+psycopg2
+PS C:\Users\Thinkpad\python-getting-started> foreman start web -f .\Procfile.windows
+23:25:46 web.1  | started with pid 6472
+23:25:47 web.1  | Traceback (most recent call last):
+23:25:47 web.1  |   File "manage.py", line 10, in <module>
+23:25:47 web.1  |     execute_from_command_line(sys.argv)
+23:25:47 web.1  |   File "C:\Python27\lib\site-packages\django\core\management\__init__.py", line 338, in execute_from_c
+ommand_line
+23:25:47 web.1  |     utility.execute()
+23:25:47 web.1  |   File "C:\Python27\lib\site-packages\django\core\management\__init__.py", line 312, in execute
+23:25:47 web.1  |     django.setup()
+23:25:47 web.1  |   File "C:\Python27\lib\site-packages\django\__init__.py", line 18, in setup
+23:25:47 web.1  |     apps.populate(settings.INSTALLED_APPS)
+23:25:47 web.1  |   File "C:\Python27\lib\site-packages\django\apps\registry.py", line 108, in populate
+23:25:47 web.1  |     app_config.import_models(all_models)
+23:25:47 web.1  |   File "C:\Python27\lib\site-packages\django\apps\config.py", line 198, in import_models
+23:25:47 web.1  |     self.models_module = import_module(models_module_name)
+23:25:47 web.1  |   File "C:\Python27\lib\importlib\__init__.py", line 37, in import_module
+23:25:47 web.1  |     __import__(name)
+23:25:47 web.1  |   File "C:\Python27\lib\site-packages\django\contrib\auth\models.py", line 41, in <module>
+23:25:47 web.1  |     class Permission(models.Model):
+23:25:47 web.1  |   File "C:\Python27\lib\site-packages\django\db\models\base.py", line 139, in __new__
+23:25:47 web.1  |     new_class.add_to_class('_meta', Options(meta, **kwargs))
+23:25:47 web.1  |   File "C:\Python27\lib\site-packages\django\db\models\base.py", line 324, in add_to_class
+23:25:47 web.1  |     value.contribute_to_class(cls, name)
+23:25:47 web.1  |   File "C:\Python27\lib\site-packages\django\db\models\options.py", line 250, in contribute_to_class
+23:25:47 web.1  |     self.db_table = truncate_name(self.db_table, connection.ops.max_name_length())
+23:25:47 web.1  |   File "C:\Python27\lib\site-packages\django\db\__init__.py", line 36, in __getattr__
+23:25:47 web.1  |     return getattr(connections[DEFAULT_DB_ALIAS], item)
+23:25:47 web.1  |   File "C:\Python27\lib\site-packages\django\db\utils.py", line 240, in __getitem__
+23:25:47 web.1  |     backend = load_backend(db['ENGINE'])
+23:25:47 web.1  | exited with code 1
+23:25:47 system | sending SIGKILL to all processes
+23:25:47        |   File "C:\Python27\lib\site-packages\django\db\utils.py", line 129, in load_backend
+23:25:47        |     raise ImproperlyConfigured(error_msg)
+PS C:\Users\Thinkpad\python-getting-started>
+PS C:\Users\Thinkpad\python-getting-started>
+PS C:\Users\Thinkpad\python-getting-started>
+PS C:\Users\Thinkpad\python-getting-started>
+PS C:\Users\Thinkpad\python-getting-started>
+PS C:\Users\Thinkpad\python-getting-started>
+PS C:\Users\Thinkpad\python-getting-started>
+PS C:\Users\Thinkpad\python-getting-started>
+PS C:\Users\Thinkpad\python-getting-started>
+PS C:\Users\Thinkpad\python-getting-started>
+PS C:\Users\Thinkpad\python-getting-started>
+PS C:\Users\Thinkpad\python-getting-started>
+PS C:\Users\Thinkpad\python-getting-started>
+PS C:\Users\Thinkpad\python-getting-started>
+PS C:\Users\Thinkpad\python-getting-started>
+PS C:\Users\Thinkpad\python-getting-started>
+PS C:\Users\Thinkpad\python-getting-started>
+PS C:\Users\Thinkpad\python-getting-started>
+PS C:\Users\Thinkpad\python-getting-started> pip install -r requirements.txt --allow-all-external
+You are using pip version 7.0.1, however version 7.1.0 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+Requirement already satisfied (use --upgrade to upgrade): dj-database-url==0.3.0 in c:\python27\lib\site-packages (from
+-r requirements.txt (line 1))
+Requirement already satisfied (use --upgrade to upgrade): Django==1.8.1 in c:\python27\lib\site-packages (from -r requir
+ements.txt (line 2))
+Collecting django-postgrespool==0.3.0 (from -r requirements.txt (line 3))
+  Using cached django-postgrespool-0.3.0.tar.gz
+Collecting psycopg2==2.6 (from -r requirements.txt (line 4))
+  Using cached psycopg2-2.6.tar.gz
+Collecting SQLAlchemy==1.0.4 (from -r requirements.txt (line 5))
+  Using cached SQLAlchemy-1.0.4.tar.gz
+Collecting whitenoise==1.0.6 (from -r requirements.txt (line 6))
+  Using cached whitenoise-1.0.6-py2.py3-none-any.whl
+Installing collected packages: psycopg2, SQLAlchemy, django-postgrespool, whitenoise
+  Running setup.py install for psycopg2
+    Complete output from command C:\Python27\python.exe -c "import setuptools, tokenize;__file__='c:\\users\\thinkpad\\a
+ppdata\\local\\temp\\pip-build-bbxidv\\psycopg2\\setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read()
+.replace('\r\n', '\n'), __file__, 'exec'))" install --record c:\users\thinkpad\appdata\local\temp\pip-3htq7x-record\inst
+all-record.txt --single-version-externally-managed --compile:
+    running install
+    running build
+    running build_py
+    creating build
+    creating build\lib.win-amd64-2.7
+    creating build\lib.win-amd64-2.7\psycopg2
+    copying lib\errorcodes.py -> build\lib.win-amd64-2.7\psycopg2
+    copying lib\extensions.py -> build\lib.win-amd64-2.7\psycopg2
+    copying lib\extras.py -> build\lib.win-amd64-2.7\psycopg2
+    copying lib\pool.py -> build\lib.win-amd64-2.7\psycopg2
+    copying lib\psycopg1.py -> build\lib.win-amd64-2.7\psycopg2
+    copying lib\tz.py -> build\lib.win-amd64-2.7\psycopg2
+    copying lib\_json.py -> build\lib.win-amd64-2.7\psycopg2
+    copying lib\_range.py -> build\lib.win-amd64-2.7\psycopg2
+    copying lib\__init__.py -> build\lib.win-amd64-2.7\psycopg2
+    creating build\lib.win-amd64-2.7\psycopg2\tests
+    copying tests\dbapi20.py -> build\lib.win-amd64-2.7\psycopg2\tests
+    copying tests\dbapi20_tpc.py -> build\lib.win-amd64-2.7\psycopg2\tests
+    copying tests\testconfig.py -> build\lib.win-amd64-2.7\psycopg2\tests
+    copying tests\testutils.py -> build\lib.win-amd64-2.7\psycopg2\tests
+    copying tests\test_async.py -> build\lib.win-amd64-2.7\psycopg2\tests
+    copying tests\test_bugX000.py -> build\lib.win-amd64-2.7\psycopg2\tests
+    copying tests\test_bug_gc.py -> build\lib.win-amd64-2.7\psycopg2\tests
+    copying tests\test_cancel.py -> build\lib.win-amd64-2.7\psycopg2\tests
+    copying tests\test_connection.py -> build\lib.win-amd64-2.7\psycopg2\tests
+    copying tests\test_copy.py -> build\lib.win-amd64-2.7\psycopg2\tests
+    copying tests\test_cursor.py -> build\lib.win-amd64-2.7\psycopg2\tests
+    copying tests\test_dates.py -> build\lib.win-amd64-2.7\psycopg2\tests
+    copying tests\test_extras_dictcursor.py -> build\lib.win-amd64-2.7\psycopg2\tests
+    copying tests\test_green.py -> build\lib.win-amd64-2.7\psycopg2\tests
+    copying tests\test_lobject.py -> build\lib.win-amd64-2.7\psycopg2\tests
+    copying tests\test_module.py -> build\lib.win-amd64-2.7\psycopg2\tests
+    copying tests\test_notify.py -> build\lib.win-amd64-2.7\psycopg2\tests
+    copying tests\test_psycopg2_dbapi20.py -> build\lib.win-amd64-2.7\psycopg2\tests
+    copying tests\test_quote.py -> build\lib.win-amd64-2.7\psycopg2\tests
+    copying tests\test_transaction.py -> build\lib.win-amd64-2.7\psycopg2\tests
+    copying tests\test_types_basic.py -> build\lib.win-amd64-2.7\psycopg2\tests
+    copying tests\test_types_extras.py -> build\lib.win-amd64-2.7\psycopg2\tests
+    copying tests\test_with.py -> build\lib.win-amd64-2.7\psycopg2\tests
+    copying tests\__init__.py -> build\lib.win-amd64-2.7\psycopg2\tests
+    running build_ext
+    building 'psycopg2._psycopg' extension
+    error: Microsoft Visual C++ 9.0 is required (Unable to find vcvarsall.bat). Get it from http://aka.ms/vcpython27
+
+    ----------------------------------------
+Command "C:\Python27\python.exe -c "import setuptools, tokenize;__file__='c:\\users\\thinkpad\\appdata\\local\\temp\\pip
+-build-bbxidv\\psycopg2\\setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read().replace('\r\n', '\n'),
+__file__, 'exec'))" install --record c:\users\thinkpad\appdata\local\temp\pip-3htq7x-record\install-record.txt --single-
+version-externally-managed --compile" failed with error code 1 in c:\users\thinkpad\appdata\local\temp\pip-build-bbxidv\
+psycopg2

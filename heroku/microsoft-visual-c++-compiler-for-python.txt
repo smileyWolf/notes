@@ -1,0 +1,16 @@
+Title: python - error: Unable to find vcvarsall.bat - Stack Overflow
+URL: http://stackoverflow.com/questions/2817869/error-unable-to-find-vcvarsall-bat
+
+Error
+=====
+Performing: "pip install -r .\requirements.txt --allow-all-external"
+Result: "error: Microsoft Visual C++ 9.0 is required (Unable to find vcvarsall.bat). Get it from http://aka.ms/vcpython27"
+
+=> Microsoft Visual C++ Compiler for Python 2.7 http://aka.ms/vcpython27
+
+   + If you start a Python interactive prompt or print sys.version, look for the MSC version string; if it is MSC v.1500 you can use this tool.
+
+   + Note that you need to have setuptools 6.0 or newer installed (listed in the system requirements on the download page). 
+     The project you are installing must use setuptools.setup(), not distutils or the auto-detection won't work.
+
+=> Need: VCForPython27.msi
