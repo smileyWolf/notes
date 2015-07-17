@@ -1,0 +1,32 @@
+Title: Cygwin
+URL: http://www.cygwin.com/
+
+=> Cygwin
+
+   + Cygwin is
+
+     - a large collection of GNU and Open Source tools which provide functionality similar to a Linux distribution on Windows
+
+     - a DLL (cygwin1.dll) which provides substantial POSIX API functionality
+
+   + Cygwin is not
+
+     - a way to run native Linux apps on Windows. You must rebuild your application from source if you want it to run on Windows
+
+     - a way to magically make native Windows apps aware of UNIX® functionality like signals, ptys, etc. Again, you need to build your apps from source if you want to take advantage of Cygwin functionality
+
+=> Simple program that allows use Unix commands on Windows
+
+   + Useful packages
+
+     - gcc-core (Devel category)
+
+     - make (Devel)
+
+     - openssl (Net): openssl, openssl-devel, libopenssl
+
+     - ssh: openssh
+
+     - vim (Editor)
+
+     - ftp (Net)
