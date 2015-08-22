@@ -1,0 +1,14 @@
+Title: virtualenvwrapper 4.5.1.dev19 — virtualenvwrapper 4.5.1.dev19 documentation
+URL: http://virtualenvwrapper.readthedocs.org/en/latest/index.html
+
+=> virtualenvwrapper
+   + a set of extensions to Ian Bicking’s virtualenv tool
+     - wrappers for creating and deleting virtual environments and otherwise managing your development workflow, 
+       making it easier to work on more than one project at a time without introducing conflicts in their dependencies
+   + Features
+     - Organizes all of your virtual environments in one place.
+     - Wrappers for managing your virtual environments (create, delete, copy).
+     - Use a single command to switch between environments.
+     - Tab completion for commands that take a virtual environment as argument.
+     - User-configurable hooks for all operations (see Per-User Customization).
+     - Plugin system for more creating sharable extensions (see Extending Virtualenvwrapper).
