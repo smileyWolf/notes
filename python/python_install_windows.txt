@@ -6,23 +6,19 @@ URL: http://docs.python-guide.org/en/latest/starting/install/win/
    1. “Windows Installer” link from the home page of the Python.org web site
 
       + add the directories for your default Python version to the PATH
-
         - C:\Python27\;C:\Python27\Scripts\
-
         - [Environment]::SetEnvironmentVariable("Path", "$env:Path;C:\Python27\;C:\Python27\Scripts\", "User")
 
    2. setuptools + pip
 
-      + packaging and installation facilities
-
+      + setuptools: building and distributing Python packages
+        - required by pip
+      + pip: packaging and installation facilities
         - setuptools for Windows: ez_setup.py (command available to you: easy_install) [https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py]
-
         - pip: get-pip.py (its replacement: pip) [https://raw.github.com/pypa/pip/master/contrib/get-pip.py]
 
    3. virtual environments
 
       + a tool to keep the dependencies required by different projects in separate places, by creating virtual Python environments for them
-
         - it solves the “Project X depends on version 1.x but, Project Y needs 4.x” dilemma
-
         - you can work on a project which requires Django 1.3 while also maintaining a project which requires Django 1.0
