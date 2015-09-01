@@ -1,8 +1,30 @@
+Summary
+=======
+- [A --- > B] (class A uses class B); class A depends on class B in some way.
+- A does not contain an instance of B as a part of its own state.
+- If B's interface changes, it impacts A and require it to change.
+
+
+
+
+
+
+Constrained
+===========
+- Non-state related concerns:
+  + B as Parameter;	class A{ public void method(B b){} }
+  + B as Local instance;	class A{ method2(){B b = new B()} }
+	{ Dependency relationship between class-A and class-B should be CONSTRAINED.   }
+	{ - A receives an instance of B as a PARAMETER to at least one of its methods. }
+	{ - A creates an instance of B, LOCAL to one of its methods (on the stack.)    }
+
+---
+
 The UML dependency relationship is the least formal of them all. It means that the class at the source end of the relationship has some sort of dependency on the class at the target (arrowhead) end of the relationship. For example, the following simple states that class A depends on class B in some way:
 
 Figure: dependency
 
-While dependency may have broad meaning, it is best not to overuse the dependency relationship. In an analysis model class diagram such as a domain model diagram you may be tempted to convey that all the classes just depend on each other. Interestingly however, the Rational Unified Process (RUP) specifies that the general class relationship that should be used in the analysis model is association (covered next), and not dependency. Therefore, even when you are modeling higher-level concepts it is best not to use the dependency relationship loosely. It is just too nebulous.
+While dependency may have broad meaning, it is best not to overuse the dependency relationship. In an analysis model class diagram such as a domain model diagram you may be tempted to convey that all the classes just depend on each other. Interestingly however, the Rational Unified Process (RUP) specifies that the general class relationship that should be used in the analysis model is association (covered next), and not dependency. Therefore, even when you are modelling higher-level concepts it is best not to use the dependency relationship loosely. It is just too nebulous.
 
 Further, unless you use the dependency relationship in a constrained manner your model consumers (yourself or other developers) will simply have too broad an interpretation of its meaning. Generally those filling architect and designer roles in a project are there to give guidance to less experienced developers. Thus the dependency relationship should be used to convey a specific kind of guidance from architects and designers to developers.
 

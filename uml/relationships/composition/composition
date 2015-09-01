@@ -1,1 +1,18 @@
-Referenced in association/association file.
+Summary
+=======
+- Refers to association-relationship.
+- [A <#>___> B]
+
+
+
+
+
+
+
+---
+
+There’s more to the association relationship. Because we are now discussing state, it may be necessary to define the lifetime of the instances that make up the dependent object’s state, and how many of the associated class instances there are. These modeling techniques refer to aggregation/composition and multiplicity, respectively.
+
+Composition on the other hand defines a relationship where the scope of the containing object (an A1) and the contained object (a B1) is related. When the containing object goes out of scope, then the contained object also goes out of scope. The composition adornment looks like the aggregation adornment, except the composition adornment is darkened:
+
+Figure: composition
