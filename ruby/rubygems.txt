@@ -1,0 +1,8 @@
+Title: RubyGems - Wikipedia, the free encyclopedia
+URL: https://en.wikipedia.org/wiki/RubyGems
+
+=> RubyGems
+   + is a package manager for the Ruby programming language that provides a standard format for distributing Ruby programs and 
+        libraries (in a self-contained format called a "gem")
+   + a tool designed to easily manage the installation of gems, and a server for distributing them. 
+       RubyGems was created in about November 2003 and is now part of the standard library from Ruby version 1.9.

@@ -1,0 +1,9 @@
+Title: RubyGems - Wikipedia, the free encyclopedia
+URL: https://en.wikipedia.org/wiki/RubyGems
+
+=> Gems
+   + are packages similar to Ebuilds
+     - they contain package information along with files to install
+   + are usually built from ".gemspec" files, which are YAML files containing information on Gems
+   + However, Ruby code may also build Gems directly.
+     - a practice is usually used with Rake
