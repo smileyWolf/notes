@@ -1,0 +1,91 @@
+Title: Android software development - Wikipedia, the free encyclopedia
+URL: https://en.wikipedia.org/wiki/Android_software_development#SDK
+
+. Android SDK
+
+  . Android software development kit (SDK) includes a comprehensive set of development tools.[8] These include
+
+    . debugger
+
+    . libraries
+
+    . handset emulator based on QEMU
+
+    . documentation
+
+    . sample code
+
+    . tutorials
+
+  . development
+
+    . integrated development environment (IDE)
+
+      . Eclipse using the Android Development Tools (ADT) Plugin
+
+      . IntelliJ IDEA IDE (all editions) fully supports Android development out of the box
+
+      . NetBeans IDE also supports Android development via a plugin
+
+      . Android Studio,[14] made by Google and powered by IntelliJ, is the official IDE
+
+    . use any text editor to edit Java and XML files
+
+      . then use command line tools (Java Development Kit and Apache Ant are required) to create, build and debug Android applications 
+        as well as control attached Android devices (e.g., triggering a reboot, installing software package(s) remotely)
+
+  . packaged
+
+    . Android applications are packaged in .apk format and stored under /data/app folder on the Android OS 
+      (the folder is accessible only to the root user for security reasons). APK package contains .dex files[17] 
+      (compiled byte code files called Dalvik executables), resource files, etc.
+
+  . toolkit
+
+    . Android Debug Bridge (ADB) is a toolkit included in the Android SDK package. 
+      It consists of both client and server-side programs that communicate with one another. 
+      The ADB is typically accessed through the command-line interface,[18] although numerous graphical user interfaces exist to control ADB
+
+    . Fastboot is a diagnostic protocol included with the SDK package used primarily to modify the flash filesystem via a USB connection from host computer. 
+      It requires that the device be started in a boot loader or Secondary Program Loader mode, in which only the most basic hardware initialization is performed. 
+      After enabling the protocol on the device itself, it will accept a specific set of commands sent to it via USB using a command line.
+
+  . Third-party development tools
+
+    . App Inventor for Android
+
+    . Basic4android
+
+    . Corona SDK
+
+    . Delphi
+
+    . HyperNext Android Creator
+
+    . Kivy
+
+    . Lazarus
+
+    . Processing
+
+    . Qt for Android
+
+    . RubyMotion
+
+    . SDL
+
+    . Visual Studio 2015
+
+    . Xamarin
+
+  . Java standards
+
+    . Obstacles to development include the fact that Android does not use established Java standards, that is, Java SE and ME. 
+      This prevents compatibility between Java applications written for those platforms and those written for the Android platform. 
+      Android only reuses the Java language syntax and semantics, but it does not provide the full class libraries and APIs bundled with Java SE or ME.[62] 
+      However, there are multiple tools in the market from companies such as Myriad Group and UpOnTek that provide Java ME to Android conversion services.
+
+  . Written applications
+
+    . Applications are written using the Java programming language and run on Dalvik, 
+      a custom virtual machine designed for embedded use which runs on top of a Linuxkernel.
