@@ -1,0 +1,74 @@
+$ ls /var/lib/dpkg -l
+
+total 11692
+drwxr-xr-x 2 root root    4096 Sep  1 00:11 alternatives
+-rw-r--r-- 1 root root 2240983 Sep 13 22:38 available
+-rw-r--r-- 1 root root 2240983 Sep 13 22:38 available-old
+-rw-r--r-- 1 root root       8 Aug 23  2012 cmethopt
+-rw-r--r-- 1 root root    1462 Feb 25  2015 diversions
+-rw-r--r-- 1 root root    1508 Feb 25  2015 diversions-old
+drwxr-xr-x 2 root root  454656 Sep 13 22:38 info
+-rw-r----- 1 root root       0 Sep 13 22:38 lock
+drwxr-xr-x 2 root root    4096 Apr 12  2012 parts
+-rw-r--r-- 1 root root     135 Aug 23  2012 statoverride
+-rw-r--r-- 1 root root 2329174 Sep 13 22:38 status
+-rw-r--r-- 1 root root 2329174 Sep 14 00:34 status.backup
+-rw-r--r-- 1 root root 2329208 Sep 13 22:38 status-old
+drwxr-xr-x 2 root root    4096 Sep 13 22:38 triggers
+drwxr-xr-x 2 root root    4096 Sep 13 22:38 updates
+
+<><><>
+
+The entries of these packages must be deleted from the status file of dpkg in order apt-get to function normally. The steps are as follows:
+
+ 1.   Make sure to make a back up of the status file if something goes wrong.
+
+    sudo cp /var/lib/dpkg/status /var/lib/dpkg/status.backup
+
+ 2.   Open /var/lib/dpkg/status with your preferred text editor and search and delete ONLY the references of the broken packages. You must not delete anything else!
+
+ 3.   Run sudo apt-get upgrade to make sure that everything is fixed.
+
+<><><>
+
+$ uname -r
+
+3.2.0-90-generic
+
+<><><>
+
+$ dpkg --status linux-image-3.2.0-90-generic
+
+Package: linux-image-3.2.0-90-generic
+Status: install ok installed
+Priority: optional
+Section: kernel
+Installed-Size: 146885
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Architecture: amd64
+Source: linux
+Version: 3.2.0-90.128
+Provides: fuse-module, ivtv-modules, kvm-api-4, linux-image, linux-image-3.0, redhat-cluster-modules
+Depends: initramfs-tools (>= 0.36ubuntu6), module-init-tools (>= 3.3-pre11-4ubuntu3), crda (>= 1.1.1-1ubuntu2) | wireless-crda
+Pre-Depends: dpkg (>= 1.10.24)
+Recommends: grub-pc | grub-efi-amd64 | grub-efi-ia32 | grub | lilo (>= 19.1)
+Suggests: fdutils, linux-doc-3.2.0 | linux-source-3.2.0, linux-tools
+Conflicts: hotplug (<< 0.0.20040105-1)
+Description: Linux kernel image for version 3.2.0 on 64 bit x86 SMP
+ This package contains the Linux kernel image for version 3.2.0 on
+ 64 bit x86 SMP.
+ .
+ Also includes the corresponding System.map file, the modules built by the
+ packager, and scripts that try to ensure that the system is not left in an
+ unbootable state after an update.
+ .
+ Supports Generic processors.
+ .
+ Geared toward desktop and server systems.
+ .
+ You likely do not want to install this package directly. Instead, install
+ the linux-generic meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+<><><>
+
